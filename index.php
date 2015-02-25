@@ -77,7 +77,7 @@
                                             '<label>Se ha identificado como:</label><b>' +document.getElementById("cargo").value+
                                             '</b><div class="form-actions">' +
                                             '<br><button class="button white inverse">Entrar</button>&nbsp;'+
-                                            '<button class="button" type="button" onclick="$.Dialog.close()">Cancel</button> '+
+                                            //'<button class="button" type="button" onclick="$.Dialog.close()">Cancel</button> '+
                                             '</div>'+
                                             '</form>';
                             	$.Dialog.title("Usuario Correcto");
