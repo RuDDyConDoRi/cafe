@@ -54,16 +54,187 @@
         </style>
 
         <script type="text/javascript">
-        	function ingreso(){
+            function limpiar_seccion(){   
+                var d = document.getElementById("lista");
+                while( d.hasChildNodes() ){
+                    var hijo = d.firstChild;
+                    hijo.parentNode.removeChild(hijo);                        
+                }
+            }
+
+            $(function(){
+                
+                $("#breakfast").on('click', function(){
+                    limpiar_seccion();
+
+                    var seccion = document.getElementById("lista");
+                    var elemento = document.createElement("a");
+                    elemento.innerHTML= "<div class='grid fluid'>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Configuracion.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Caja.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Mesas.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='menu.php'><img class='icono' src='images/Boton_Menu.png' alt=''></a></div>"+
+                        "</div>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Reportes.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Pedido.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Cocina.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Restaurante.png' alt=''></a></div>"+
+                        "</div>"+
+                
+                    "</div>";                    
+                    seccion.appendChild(elemento);
+                });
+
+                $("#crepes").on('click', function(){
+                    //alert("Mucha...");
+                    limpiar_seccion();
+
+                    var d2 = document.getElementById("lista");
+                    var elemento  = document.createElement("a");
+                    elemento.innerHTML= "<div class='grid fluid'>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Configuracion.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Caja.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Mesas.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='menu.php'><img class='icono' src='images/Boton_Menu.png' alt=''></a></div>"+
+                        "</div>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Reportes.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Pedido.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Cocina.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Restaurante.png' alt=''></a></div>"+
+                        "</div>"+
+                
+                    "</div>";
+                    elemento.size = 1;
+                    d2.appendChild( elemento );
+                });
+                
+                $("#hotdrinks").on('click', function(){
+                    limpiar_seccion();
+
+                    var seccion = document.getElementById("lista");
+                    var elemento = document.createElement("a");
+                    
+                    elemento.innerHTML= "<div class='grid fluid'>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Configuracion.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Caja.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Mesas.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='menu.php'><img class='icono' src='images/Boton_Menu.png' alt=''></a></div>"+
+                        "</div>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Reportes.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Pedido.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Cocina.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Restaurante.png' alt=''></a></div>"+
+                        "</div>"+
+                
+                    "</div>";
+
+                    seccion.appendChild(elemento);
+                });
+
+                $("#colddrinks").on('click', function(){
+                    limpiar_seccion();
+
+                    var seccion = document.getElementById("lista");
+                    var elemento = document.createElement("a");
+                    
+                    elemento.innerHTML= "<div class='grid fluid'>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Configuracion.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Caja.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Mesas.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='menu.php'><img class='icono' src='images/Boton_Menu.png' alt=''></a></div>"+
+                        "</div>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Reportes.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Pedido.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Cocina.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Restaurante.png' alt=''></a></div>"+
+                        "</div>"+
+                
+                    "</div>";
+
+                    seccion.appendChild(elemento);
+                });
+
+                $("#mexico").on('click', function(){
+                    limpiar_seccion();
+
+                    var seccion = document.getElementById("lista");
+                    var elemento = document.createElement("a");
+                    
+                    elemento.innerHTML= "<div class='grid fluid'>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Configuracion.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Caja.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Mesas.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='menu.php'><img class='icono' src='images/Boton_Menu.png' alt=''></a></div>"+
+                        "</div>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Reportes.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Pedido.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Cocina.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Restaurante.png' alt=''></a></div>"+
+                        "</div>"+
+                
+                    "</div>";
+
+                    seccion.appendChild(elemento);
+                });
+
+                $("#sandwi").on('click', function(){
+                    limpiar_seccion();
+
+                    var seccion = document.getElementById("lista");
+                    var elemento = document.createElement("a");
+                    
+                    elemento.innerHTML= "<div class='grid fluid'>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Configuracion.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Caja.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Mesas.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='menu.php'><img class='icono' src='images/Boton_Menu.png' alt=''></a></div>"+
+                        "</div>"+
+                        "<div class='row'>"+
+                            "<div class='span2'></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Reportes.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Pedido.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Cocina.png' alt=''></a></div>"+
+                            "<div class='span2'><a href='Notify.php'><img class='icono' src='images/Boton_Restaurante.png' alt=''></a></div>"+
+                        "</div>"+
+                
+                    "</div>";
+        
+
+                    seccion.appendChild(elemento);
+                });        
+
+            });
+
+        	function listas(){
         		alert("message");
 
-        		if(condition){
+        		if(1>0){
         			window.open("_black", '', 'width=330,height=252,scrollbars=NO,statusbar=NO,left=500,top=250');
         		}else{
         			
         		}
-
-
         	}
         </script>
 
@@ -79,7 +250,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="span4"><img src="images/logo.png" alt=""></div>
+                    <div class="span4"><img src="images/logo.png" class="rounded bd-transparent bg-transparent"></div>
                     <div class="span6"></div>
                     <div class="span2">
                         <br><br><br><br>
@@ -89,26 +260,25 @@
                     </div>
                 </div>
                 <br>
-                <legend></legend>
 
                 <div class="row">
                     <div class="span3">
                         <div class="row">
-                            <div class="span6"><a href="Notify.php"><img class="icono" src="images/Boton_Breakfast.png" alt=""></a></div>
-                            <div class="span6"><a href="Notify.php"><img class="icono" src="images/Boton_Crepes.png" alt=""></a></div>
+                            <div class="span6"><img id="breakfast" class="icono" src="images/Boton_Breakfast.png" alt=""></div>
+                            <div class="span6"><img id="crepes" class="icono" src="images/Boton_Crepes.png" alt=""></div>
                         </div>
                         <div class="row">
-                            <div class="span6"><a href="Notify.php"><img class="icono" src="images/Boton_hotdrinks.png" alt=""></a></div>
-                            <div class="span6"><a href="Notify.php"><img class="icono" src="images/Boton_colddrinks.png" alt=""></a></div>
+                            <div class="span6"><img id="hotdrinks" class="icono" src="images/Boton_hotdrinks.png" alt=""></div>
+                            <div class="span6"><img id="colddrinks" class="icono" src="images/Boton_colddrinks.png" alt=""></div>
                         </div>
                         <div class="row">
-                            <div class="span6"><a href="Notify.php"><img class="icono" src="images/Boton_mexico.png" alt=""></a></div>
-                            <div class="span6"><a href="Notify.php"><img class="icono" src="images/Boton_sandwiches.png" alt=""></a></div>
+                            <div class="span6"><img id="mexico" class="icono" src="images/Boton_mexico.png" alt=""></div>
+                            <div class="span6"><img id="sandwi" class="icono" src="images/Boton_sandwiches.png" alt=""></div>
                         </div>
                     </div>
                     <div class="span8">
                         <div id="lista">
-                            elemntos de la lista
+                            
                         </div>
                     </div>
                 </div>

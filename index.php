@@ -64,19 +64,21 @@
                             //var contra = document.getElementById("pass").value;
        						//alert("user: "+cargo);
                             if(cargo === "Administrador"){
-                            	var content = '<form class="user-input" action="administrador.php" method="post">' +
+                            	var content = '<form class="user-input text-center" action="administrador.php" method="post">' +
+                            				'<img src="images/empleado.png" class="rounded bd-transparent bg-transparent shadow span1">'+
                                             '<label>Se ha identificado como:</label><b>'+document.getElementById("cargo").value+
                                             '</b><div class="form-actions">' +
-                                            '<br><button class="button primary white inverse">Entrar</button>&nbsp;'+
+                                            '<br><button class="button primary white inverse">OK</button>&nbsp;'+
                                             '</div>'+
                                             '</form>';
                                	$.Dialog.title("Usuario Correcto");
                                	$.Dialog.content(content);
                             }else{
-                            	var content = '<form class="user-input" action="mesero.php" method="post">' +
+                            	var content = '<form class="user-input text-center" action="mesero.php" method="post">' +
+                            				'<img src="images/empleado.png" class="rounded bd-transparent bg-transparent shadow span1">'+
                                             '<label>Se ha identificado como:</label><b>' +document.getElementById("cargo").value+
                                             '</b><div class="form-actions">' +
-                                            '<br><button class="button white inverse">Entrar</button>&nbsp;'+
+                                            '<br><button class="button white inverse">OK</button>&nbsp;'+
                                             //'<button class="button" type="button" onclick="$.Dialog.close()">Cancel</button> '+
                                             '</div>'+
                                             '</form>';
@@ -98,17 +100,17 @@
         <div class="container">
             <div class="grid fluid">
                 
-                <div class="row">
+                <div class="row text-center">
                     <div class="span4"></div>
                     <div class="span4">
                         <div class="grid fluid">
-                        	<img src="images/logo.png" alt="">
+                        	<img src="images/logo.png" class="rounded bd-transparent bg-transparent" alt="">
                         </div>
                     </div>
                     <div class="span4"></div>
                 </div>
 
-                <div class="row">
+                <div class="row text-center">
                 	<div class="span3"></div>
                     <div class="span6">
                     	<img src="images/titu.png" alt="">
@@ -116,8 +118,8 @@
                 	<div class="span3"></div>
                 </div>
 
-                <div class="row">
-                    <div class="row">
+                <div class="row ">
+                    <div class="row ">
                         <div class="span12">
                             <fieldset>
                                 <div id="caja01">
@@ -144,7 +146,7 @@
                             </fieldset>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row text-center">
                     	<div class="span4"></div>
     	                <div class="span4">
         	            	<img src="images/copyright.png" alt="">

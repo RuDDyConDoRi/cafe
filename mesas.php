@@ -62,8 +62,6 @@
         		}else{
         			
         		}
-
-
         	}
         </script>
 
@@ -72,34 +70,43 @@
 
 	<body class="metro">
         <div class="container">
-            <div class="grid fluid">
+            <div class="grid fluid ">
                 
                 <div class="row">
-                    <div class="span12"><img src="images/sistem.png" alt=""></div>
+                    <div class="span12"><img src="images/sistem.png" ></div>
                 </div>
 
                 <div class="row">
                     <div class="span4"><img src="images/logo.png" class="rounded bd-transparent bg-transparent"></div>
-                        <div class="span2">
-                            <img src="images/empleado.png" class="rounded bd-transparent bg-transparent shadow span12">
-                            Usuario: <b>Empleado01</b>
-                        </div>
-                    <div class="span4"></div>
                     <div class="span2">
-                        <br><br><br><br>
+                        
+                    </div>
+                    <div class="span4"></div>
+                    <div class="span2">    <br><br><br><br>
                         <div class="span10">
                             <a href="index.php"><img class="icono" src="images/Boton_Salir.png" alt=""></a>
                         </div>
                     </div>
                 </div>
-                <br><br>
-                <div class="row">
-                	<div class="span3"></div>
-                    <div class="span2"><a href="menu.php"><img class="icono" src="images/Boton_Menu.png" alt=""></a></div>
-                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Pedido.png" alt=""></a></div>
-                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Caja.png" alt=""></a></div>
+                <br>
+
+                <div class="row text-center">
+                	<div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa1.png" alt=""></a></div>
+                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa2.png" alt=""></a></div>
+                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa3.png" alt=""></a></div>
+                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa4.png" alt=""></a></div>
+                    <div class="span2"><a href="menu.php"><img class="icono" src="images/Boton_Mesa5.png" alt=""></a></div>
+                    <div class="span2"><a href="menu.php"><img class="icono" src="images/Boton_Mesa6.png" alt=""></a></div>
                 </div>
-                <br><br><br>
+                <div class="row text-center">
+                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa7.png" alt=""></a></div>
+                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa8.png" alt=""></a></div>
+                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa9.png" alt=""></a></div>
+                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa10.png" alt=""></a></div>
+                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesa11.png" alt=""></a></div>
+                    <div class="span2"><a href="menu.php"><img class="icono" src="images/Boton_Mesa12.png" alt=""></a></div>
+                </div>
+
                 <div class="row">
                         <div class="grid">
                             <div class="row">

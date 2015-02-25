@@ -62,8 +62,6 @@
         		}else{
         			
         		}
-
-
         	}
         </script>
 
@@ -75,27 +73,29 @@
             <div class="grid fluid">
                 
                 <div class="row">
-                    <div class="span12"><img src="images/sistem.png" alt=""></div>
+                    <div class="span12"><img src="images/sistem.png" ></div>
                 </div>
 
                 <div class="row">
-                    <div class="span4"><img src="images/logo.png" alt=""></div>
-                    <div class="span6"></div>
+                    <div class="span4"><img src="images/logo.png" class="rounded bd-transparent bg-transparent"></div>
                     <div class="span2">
-                        <br><br><br><br>
+                        <img src="images/empleado.png" class="rounded bd-transparent bg-transparent shadow span12">
+                        Usuario: <b>Administrador</b>
+                    </div>
+                    <div class="span4"></div>
+                    <div class="span2">    <br><br><br><br>
                         <div class="span10">
                             <a href="index.php"><img class="icono" src="images/Boton_Salir.png" alt=""></a>
                         </div>
                     </div>
                 </div>
                 <br>
-                <legend></legend>
 
                 <div class="row">
                 	<div class="span2"></div>
                     <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Configuracion.png" alt=""></a></div>
                     <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Caja.png" alt=""></a></div>
-                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Mesas.png" alt=""></a></div>
+                    <div class="span2"><a href="mesas.php"><img class="icono" src="images/Boton_Mesas.png" alt=""></a></div>
                     <div class="span2"><a href="menu.php"><img class="icono" src="images/Boton_Menu.png" alt=""></a></div>
                 </div>
                 <div class="row">
