@@ -22,6 +22,8 @@
         <script src="js/docs.js"></script>
         <script src="js/github.info.js"></script>	
 
+    <script src="js/jquery/jquery.dataTables.js"></script>
+
         <style type="text/css">
         	body{
         		background: url(images/background.png);
@@ -54,15 +56,42 @@
         </style>
 
         <script type="text/javascript">
-        	function ingreso(){
-        		alert("message");
+            function limpiar_seccion(){   
+                var d = document.getElementById("lista");
+                while( d.hasChildNodes() ){
+                    var hijo = d.firstChild;
+                    hijo.parentNode.removeChild(hijo);                        
+                }
+            }
 
-        		if(condition){
-        			window.open("_black", '', 'width=330,height=252,scrollbars=NO,statusbar=NO,left=500,top=250');
-        		}else{
-        			
-        		}
-        	}
+            $(function(){
+                
+                $("#breakfast").on('click', function(){
+                    //evento
+                });
+
+                $("#crepes").on('click', function(){
+                    //evento
+                });
+                
+                $("#hotdrinks").on('click', function(){
+                    //evento
+                });
+
+                $("#colddrinks").on('click', function(){
+                    //evento
+                });
+
+                $("#mexico").on('click', function(){
+                    //evento
+                });
+
+                $("#sandwi").on('click', function(){
+                    //evento
+                });        
+
+            });
+
         </script>
 
 		<title>Cafe del Mundo -  Inicio</title>
@@ -70,19 +99,17 @@
 
 	<body class="metro">
         <div class="container">
-            <div class="grid fluid ">
+            <div class="grid fluid">
                 
                 <div class="row">
-                    <div class="span12"><img src="images/sistem.png" ></div>
+                    <div class="span12"><img src="images/sistem.png" alt=""></div>
                 </div>
 
                 <div class="row">
                     <div class="span4"><img src="images/logo.png" class="rounded bd-transparent bg-transparent"></div>
+                    <div class="span6"></div>
                     <div class="span2">
-                        
-                    </div>
-                    <div class="span4"></div>
-                    <div class="span2">    <br><br><br><br>
+                        <br><br><br><br>
                         <div class="span10">
                             <a href="index.php"><img class="icono" src="images/Boton_Salir.png" alt=""></a>
                         </div>
@@ -90,23 +117,42 @@
                 </div>
                 <br>
 
-                <div class="row text-center">
-                	<div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa1.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa2.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa3.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa4.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa5.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa6.png" alt=""></a></div>
-                </div>
-                <div class="row text-center">
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa7.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa8.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa9.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa10.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa11.png" alt=""></a></div>
-                    <div class="span2"><a href="mesa.php"><img class="icono" src="images/Boton_Mesa12.png" alt=""></a></div>
+                <div class="row">
+                    
+                    <div class="span12">
+                        <div id="lista">
+                            <table class="table striped hovered dataTable" id="dataTables-1">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left">Nro.</th>
+                                        <th class="text-left">Producto</th>
+                                        <th class="text-left">Cantidad</th>
+                                        <th class="text-left">Tiempo</th>
+                                        <th class="text-left">Precio</th>
+                                    </tr>
+                                </thead>
+                            </table>    
+
+            <script>
+                $(function(){
+                    $('#dataTables-1').dataTable( {
+                        "bProcessing": true,
+                        "sAjaxSource": "data/dataTables-mesa.txt",
+                        "aoColumns": [
+                            { "mData": "engine" },
+                            { "mData": "browser" },
+                            { "mData": "platform" },
+                            { "mData": "version" },
+                            { "mData": "grade" }
+                        ]
+                    } );
+                });
+            </script>
+                        </div>
+                    </div>
                 </div>
 
+                
                 <div class="row">
                         <div class="grid">
                             <div class="row">

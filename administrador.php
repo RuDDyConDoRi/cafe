@@ -93,27 +93,23 @@
 
                 <div class="row">
                 	<div class="span2"></div>
-                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Configuracion.png" alt=""></a></div>
-                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Caja.png" alt=""></a></div>
+                    <div class="span2"><a href=""><img class="icono" src="images/Boton_Configuracion.png" alt=""></a></div>
+                    <div class="span2"><a href=""><img class="icono" src="images/Boton_Caja.png" alt=""></a></div>
                     <div class="span2"><a href="mesas.php"><img class="icono" src="images/Boton_Mesas.png" alt=""></a></div>
-                    <div class="span2"><a href="menu.php"><img class="icono" src="images/Boton_Menu.png" alt=""></a></div>
+                    <div class="span2"><a href="menu_admin.php"><img class="icono" src="images/Boton_Menu.png" alt=""></a></div>
                 </div>
                 <div class="row">
                     <div class="span2"></div>
-                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Reportes.png" alt=""></a></div>
-                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Pedido.png" alt=""></a></div>
-                    <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Cocina.png" alt=""></a></div>
+                    <div class="span2"><a href=""><img class="icono" src="images/Boton_Reportes.png" alt=""></a></div>
+                    <div class="span2"><a href=""><img class="icono" src="images/Boton_Pedido.png" alt=""></a></div>
+                    <div class="span2"><a href=""><img class="icono" src="images/Boton_Cocina.png" alt=""></a></div>
                     <div class="span2"><a href="Notify.php"><img class="icono" src="images/Boton_Restaurante.png" alt=""></a></div>
                 </div>
 
                 <div class="row">
                         <div class="grid">
-                            <div class="row">
-	                			<div class="span4"></div>
-    	                		<div class="span4">
+                            <div class="row text-center">
         	            			<img src="images/copyright.png" alt="">
-            	        		</div>
-                    			<div class="span4"></div>
                 			</div>
 
                         </div>

@@ -74,7 +74,8 @@
                                	$.Dialog.title("Usuario Correcto");
                                	$.Dialog.content(content);
                             }else{
-                            	var content = '<form class="user-input text-center" action="mesero.php" method="post">' +
+                            	if(cargo == "Cocinero"){
+                            		var content = '<form class="user-input text-center" action="cocina.php" method="post">' +
                             				'<img src="images/empleado.png" class="rounded bd-transparent bg-transparent shadow span1">'+
                                             '<label>Se ha identificado como:</label><b>' +document.getElementById("cargo").value+
                                             '</b><div class="form-actions">' +
@@ -82,8 +83,20 @@
                                             //'<button class="button" type="button" onclick="$.Dialog.close()">Cancel</button> '+
                                             '</div>'+
                                             '</form>';
-                            	$.Dialog.title("Usuario Correcto");
-                            	$.Dialog.content(content);
+                            		$.Dialog.title("Usuario Correcto");
+                            		$.Dialog.content(content);
+                            	}else{
+                            		var content = '<form class="user-input text-center" action="mesero.php" method="post">' +
+                            				'<img src="images/empleado.png" class="rounded bd-transparent bg-transparent shadow span1">'+
+                                            '<label>Se ha identificado como:</label><b>' +document.getElementById("cargo").value+
+                                            '</b><div class="form-actions">' +
+                                            '<br><button class="button white inverse">OK</button>&nbsp;'+
+                                            //'<button class="button" type="button" onclick="$.Dialog.close()">Cancel</button> '+
+                                            '</div>'+
+                                            '</form>';
+                            		$.Dialog.title("Usuario Correcto");
+                            		$.Dialog.content(content);
+                            	}
                             }                                   
                         }
                     });
@@ -133,6 +146,7 @@
                                             <option>Empleado03</option>
                                             <option>Empleado04</option>
                                             <option>Empleado05</option>
+                                            <option>Cocinero</option>
                                         </select>
                                     </div>
 

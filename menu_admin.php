@@ -62,7 +62,40 @@
                 }
             }
 
+            function operacion(){
+                //alert("Agregar o borrar")
+                //$('#producto').on('',function(){
+                    $.Dialog({
+                        overlay: true,
+                        shadow: true,
+                        flat: true,
+                        draggable: true,
+                        icon: '<img src="images/favic.png">',
+                        title: 'Flat window',
+                        content: '',
+                        padding: 10,
+                        onShow: function(_dialog){
+                            //var contra = document.getElementById("pass").value;
+                            //alert("user: ");
+                                var content = '<form class="user-input text-center">' +
+                                            '<img src="images/beer.png" class="rounded bd-transparent bg-transparent shadow span1">'+
+                                            '<label>Que desea hacer con el Producto</label><b>'+
+                                            '</b><div class="form-actions">' +
+                                            '<br><button class="button primary white inverse">Agregar</button>&nbsp;'+
+                                            '<button class="button primary white inverse" type="button" onclick="$.Dialog.close()">Quitar</button>' 
+                                            '</div>'+
+                                            '</form>';
+                                $.Dialog.title("Usuario Correcto");
+                                $.Dialog.content(content);
+                                                               
+                        }
+                    });
+                //});
+            }
+
+            
             $(function(){
+                
                 
                 $("#breakfast").on('click', function(){
                     limpiar_seccion();
@@ -72,17 +105,17 @@
                     elemento.innerHTML= "<div class='grid fluid'>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                 
                     "</div>";
@@ -98,17 +131,17 @@
                     elemento.innerHTML= "<div class='grid fluid'>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                 
                     "</div>";
@@ -125,17 +158,17 @@
                     elemento.innerHTML= "<div class='grid fluid'>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                 
                     "</div>";
@@ -152,17 +185,17 @@
                     elemento.innerHTML= "<div class='grid fluid'>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                 
                     "</div>";
@@ -179,17 +212,17 @@
                     elemento.innerHTML= "<div class='grid fluid'>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                 
                     "</div>";
@@ -206,17 +239,17 @@
                     elemento.innerHTML= "<div class='grid fluid'>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                         "<div class='row'>"+
                             "<div class='span2'></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
-                            "<div class='span2'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
+                            "<div class='span2' onClick='operacion()' id='producto'><a ><img class='icono' src='images/beer.png' alt=''></a></div>"+
                         "</div>"+
                 
                     "</div>";
